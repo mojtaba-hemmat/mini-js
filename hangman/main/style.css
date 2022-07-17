@@ -1,0 +1,120 @@
+/* WEB230 Final Project - Hangman Game */
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   height: 100%;
+   margin: 0;
+}
+
+
+body {
+   background: url("./assets/1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0;
+   display: grid;
+   grid-template-rows: 6em auto 300px 6rem 2rem;
+   align-content: flex-start;
+   height: 100%;
+   text-align: center;
+   font-size: 2rem;
+   font-family: 'Edu QLD Beginner', cursive;
+}
+
+.winner {
+   color: green;
+}
+
+h1 {
+   text-align: center;
+   color: rgb(255, 0, 98);
+}
+
+
+
+.gameoverbutton{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.playagain {
+   width: 130px;
+   height: 50px;
+   font-size: large;
+   font-family: 'Edu QLD Beginner', cursive;
+   margin: 20px 20px 20px 20px;
+   display: none;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   background: rgb(0, 95, 139);
+   color: rgb(255, 174, 0);
+   transition: all 0.2s ease-in;
+}
+
+.playagain:hover{
+   background: rgb(0, 56, 139);
+   color: rgb(221, 255, 0);
+}
+
+#letters {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 1em 0;
+   font-family: 'Comic Sans MS', sans-serif;
+}
+
+#letters div {
+   margin: 5px;
+   padding-top: 0.5em;
+   border: 1px solid gray;
+   cursor: pointer;
+   color: darkgreen;
+   width: 2em;
+   height: 2em;
+   line-height: 0.9;
+   overflow: hidden;
+   /* transition: all 0.4s ease-in-out; */
+}
+
+#letters div:hover {
+   background-color: palegreen;
+}
+
+#clue p {
+   margin: 0;
+   font-size: 3rem;
+   letter-spacing: 0.5em;
+   font-family: 'Comic Sans MS', sans-serif;
+}
+
+/* 
+This class will grey out the letters as they are used. 
+Just add the class "used".
+*/
+#letters div.used {
+   background-color: lightgray;
+   opacity: 0.5;
+}
+
+section#image {
+   text-align: center;
+}
+
+/* 
+Display the message when the game is over. 
+Hide it at the beginning. 
+*/
+section#gameover p {
+   text-align: center;
+   font-size: 1rem;
+   display: none;
+}
+
+/* WEB230 Final Project Winter 2021 */

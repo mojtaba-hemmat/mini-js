@@ -1,0 +1,33 @@
+body {
+  background:url("./assets/1.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+}
+
+.border {
+  position: absolute;
+  width: 550px;
+  height: 150px;
+  border: 10px solid rgb(240, 217, 140);
+  border-radius: 10px;
+  background-color: rgb(222, 196, 148);
+  margin: 280px 30px 30px 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  margin-top: 325px;
+  color: rgb(143, 20, 20);
+  font-size: 60px;
+  letter-spacing: 7px;
+}
